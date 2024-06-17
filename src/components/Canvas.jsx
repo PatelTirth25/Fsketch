@@ -110,7 +110,7 @@ const Canvas = () => {
         const context = canvas.getContext('2d');
 
         canvas.width = 1300;
-        canvas.height = 800;
+        canvas.height = 700;
 
         context.clearRect(0, 0, canvas.width, canvas.height);
         const roughCanvas = rough.canvas(canvas);
