@@ -1,0 +1,12 @@
+version: '3'
+services:
+  frontend: 
+    image: canvas_client:0.0.1
+    ports: 
+     - "3050:80"
+    depends_on:
+      - backend
+  backend:
+    image: canvas_server:0.0.1
+    ports: 
+      - "3000:3000"
